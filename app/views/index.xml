@@ -1,10 +1,13 @@
 <Alloy>
 	<Collection src="incident"/>
     <Window class="container">
-    	<Label text="Dyżurny: A"/>
-    	<Label text="Zastępca: B"/>
+    	<View>
+    	</View>
         <Widget id="incidentsWidget" src="nl.fokkezb.pullToRefresh" onRelease="fnIncidentsRefresh">
             <ListView>
+				<HeaderView>
+			    	<Label backgroundColor="#a88"> A | B</Label>
+				</HeaderView>
                 <ListSection dataCollection="incident">
                     <ListItem title="{subject}" />
                 </ListSection>

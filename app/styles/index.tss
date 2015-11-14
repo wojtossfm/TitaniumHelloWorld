@@ -8,6 +8,10 @@
 	color: "#000"
 }
 
+"ListItem": {
+	color: "#000"
+}
+
 "#label": {
 	font: {
 		fontSize: 12

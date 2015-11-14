@@ -1,5 +1,14 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, Alloy</Label>
-	</Window>
+	<Collection src="incident"/>
+    <Window class="container">
+    	<Label text="Dyżurny: A"/>
+    	<Label text="Zastępca: B"/>
+        <Widget id="incidentsWidget" src="nl.fokkezb.pullToRefresh" onRelease="fnIncidentsRefresh">
+            <ListView>
+                <ListSection dataCollection="incident">
+                    <ListItem title="{subject}" />
+                </ListSection>
+            </ListView>
+        </Widget>
+    </Window>
 </Alloy>
